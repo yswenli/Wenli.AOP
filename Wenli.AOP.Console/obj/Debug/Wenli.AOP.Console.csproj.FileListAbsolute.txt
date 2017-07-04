@@ -1,0 +1,7 @@
+E:\百度云\Develop\案例\AOP\Wenli.AOP\Wenli.AOP.Console\bin\Debug\Wenli.AOP.Console.exe
+E:\百度云\Develop\案例\AOP\Wenli.AOP\Wenli.AOP.Console\bin\Debug\Wenli.AOP.Console.pdb
+E:\百度云\Develop\案例\AOP\Wenli.AOP\Wenli.AOP.Console\bin\Debug\Wenli.AOP.dll
+E:\百度云\Develop\案例\AOP\Wenli.AOP\Wenli.AOP.Console\bin\Debug\Wenli.AOP.pdb
+E:\百度云\Develop\案例\AOP\Wenli.AOP\Wenli.AOP.Console\obj\Debug\Wenli.AOP.Console.csprojResolveAssemblyReference.cache
+E:\百度云\Develop\案例\AOP\Wenli.AOP\Wenli.AOP.Console\obj\Debug\Wenli.AOP.Console.exe
+E:\百度云\Develop\案例\AOP\Wenli.AOP\Wenli.AOP.Console\obj\Debug\Wenli.AOP.Console.pdb

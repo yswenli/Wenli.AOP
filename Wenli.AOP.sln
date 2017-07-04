@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wenli.AOP", "Wenli.AOP\Wenli.AOP.csproj", "{464056C8-25D9-4796-90E0-30D1A8DD3BA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wenli.AOP.Console", "Wenli.AOP.Console\Wenli.AOP.Console.csproj", "{6C84840B-D77E-4564-BFD8-0E03B15B054C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{464056C8-25D9-4796-90E0-30D1A8DD3BA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{464056C8-25D9-4796-90E0-30D1A8DD3BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{464056C8-25D9-4796-90E0-30D1A8DD3BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{464056C8-25D9-4796-90E0-30D1A8DD3BA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C84840B-D77E-4564-BFD8-0E03B15B054C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C84840B-D77E-4564-BFD8-0E03B15B054C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C84840B-D77E-4564-BFD8-0E03B15B054C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C84840B-D77E-4564-BFD8-0E03B15B054C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
