@@ -2,4 +2,3 @@ E:\百度云\Develop\案例\AOP\Wenli.AOP\Wenli.AOP\bin\Debug\Wenli.AOP.dll
 E:\百度云\Develop\案例\AOP\Wenli.AOP\Wenli.AOP\bin\Debug\Wenli.AOP.pdb
 E:\百度云\Develop\案例\AOP\Wenli.AOP\Wenli.AOP\obj\Debug\Wenli.AOP.dll
 E:\百度云\Develop\案例\AOP\Wenli.AOP\Wenli.AOP\obj\Debug\Wenli.AOP.pdb
-E:\百度云\Develop\案例\AOP\Wenli.AOP\Wenli.AOP\obj\Debug\Wenli.AOP.csprojResolveAssemblyReference.cache

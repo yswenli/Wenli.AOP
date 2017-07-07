@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("Wenli.AOP")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("wenli.aop是C #轻量级AOP库")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("wenli")]
 [assembly: AssemblyProduct("Wenli.AOP")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("Copyright © wenli  2017")]
+[assembly: AssemblyTrademark("wenli.aop")]
 [assembly: AssemblyCulture("")]
 
 //将 ComVisible 设置为 false 将使此程序集中的类型
