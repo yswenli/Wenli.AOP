@@ -1,4 +1,7 @@
 # Wenli.AOP
+
+<img src="https://github.com/yswenli/Wenli.AOP/blob/master/Wenli.AOP.Console/wenli.aop.png?raw=true" alt="wenli.aop" />
+
 使用方式如下：
 
 
