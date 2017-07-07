@@ -20,13 +20,13 @@ using System.Runtime.Remoting.Messaging;
 using System.Runtime.Remoting.Proxies;
 using System.Text;
 
-namespace Wenli.AOP.Factory
+namespace Wenli.AOP.Simple
 {
     /// <summary>
     /// AOP的代理
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class AOPProxy<T> : RealProxy
+    internal class AOPProxy<T> : RealProxy
     {
         private T _target;
 

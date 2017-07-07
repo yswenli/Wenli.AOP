@@ -18,7 +18,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Wenli.AOP.Factory
+namespace Wenli.AOP.Simple
 {
     /// <summary>
     /// AOP包装工厂

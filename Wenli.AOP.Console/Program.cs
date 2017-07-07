@@ -5,7 +5,9 @@ using System.Text;
 
 namespace Wenli.AOP.Console
 {
-    using Factory;
+    using DynamicProxy;
+    using Intercepting;
+    using Simple;
     using Console = System.Console;
 
     class Program
@@ -14,6 +16,8 @@ namespace Wenli.AOP.Console
         {
             Console.Title = "Wenli.AOP 测试";
 
+            Console.WriteLine("Wenli.AOP 测试");
+
             var readLine = string.Empty;
 
 
@@ -21,47 +25,54 @@ namespace Wenli.AOP.Console
 
             while (true)
             {
-
                 if (string.IsNullOrEmpty(readLine))
                 {
-                    Console.WriteLine("Wenli.AOP 测试,输入F进入Factory，默认为Intercepting");
+                    
+
+                    Console.WriteLine("输入1进入 Simple，输入2进入 Intercepting ，输入3进入 DynamicProxy");
 
                     readLine = Console.ReadLine();
                 }
 
-                if (!string.IsNullOrEmpty(readLine) && readLine.ToUpper() == "F")
+                if (!string.IsNullOrEmpty(readLine))
                 {
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("当前模式为AOPFactory");
-                    AOPFactory.OnMethodExecuting += AOPFactory_OnMethodExecuting;
-                    AOPFactory.OnMethodExecuted += AOPFactory_OnMethodExecuted;
-                    AOPFactory.Create<FTest>().Calc(111, 2222);
+
+                    switch (readLine)
+                    {
+                        case "1":
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            SimpleTest.Test();
+
+                            break;
+
+                        case "2":
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            InterceptingTest.Test();
+
+                            break;
+
+                        case "3":
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            DynamicProxyTest.Test();
+
+                            break;
+
+                        default:
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            DynamicProxyTest.Test();
+
+                            break;
+                    }
                 }
                 else
                 {
-                    Console.ForegroundColor = ConsoleColor.DarkYellow;
-                    Console.WriteLine("当前模式为Intercepting");
-                    new Test().Calc(666, 888);
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    DynamicProxyTest.Test();
                 }
-                Console.WriteLine("测试完成，按回车继续！");
-                Console.ReadLine();
-
                 readLine = "";
                 Console.ForegroundColor = dc;
             }
         }
 
-
-
-        private static bool AOPFactory_OnMethodExecuting(object target, string funName, object[] args)
-        {
-            Console.WriteLine("执行前：sender:" + target + " funName: " + funName + string.Format(" args:{0},{1}", args));
-            return true;
-        }
-
-        private static void AOPFactory_OnMethodExecuted(object target, string funName, object[] args, object returnValue)
-        {
-            Console.WriteLine("执行后：sender:" + target + " funName:" + funName + string.Format(" args:{0},{1}", args) + " returnValue:" + returnValue);
-        }
     }
 }

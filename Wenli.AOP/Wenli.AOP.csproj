@@ -31,7 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Services.Client" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,15 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Factory\AOPFactory.cs" />
-    <Compile Include="Factory\AOPHandler.cs" />
-    <Compile Include="Factory\AOPProxy.cs" />
+    <Compile Include="AOPMethodAttribute.cs" />
+    <Compile Include="DynamicProxy\AOPProxy.cs" />
+    <Compile Include="DynamicProxy\Core\MetaDataFactory.cs" />
+    <Compile Include="DynamicProxy\Core\ProxyFactory.cs" />
+    <Compile Include="DynamicProxy\IProxyInvocationHandler.cs" />
+    <Compile Include="Simple\AOPFactory.cs" />
+    <Compile Include="AOPHandler.cs" />
+    <Compile Include="Simple\AOPProxy.cs" />
     <Compile Include="Intercepting\InterceptorAttribute.cs" />
-    <Compile Include="Intercepting\InterceptorMethodAttribute.cs" />
     <Compile Include="Intercepting\InterceptorObject.cs" />
     <Compile Include="Intercepting\MessageSink.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

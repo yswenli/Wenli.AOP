@@ -69,7 +69,7 @@ namespace Wenli.AOP.Intercepting
             IMethodCallMessage call = msg as IMethodCallMessage;
 
             //InterceptorMethodAttribute
-            if (call == null || (Attribute.GetCustomAttribute(call.MethodBase, typeof(InterceptorMethodAttribute))) == null)
+            if (call == null || (Attribute.GetCustomAttribute(call.MethodBase, typeof(AOPMethodAttribute))) == null)
             {
                 retMsg = _nextSink.SyncProcessMessage(msg);
             }
